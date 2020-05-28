@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(90deg, rgba(39,190,218,1) 0%, rgba(90,86,189,1) 50%, rgba(43,80,209,1) 100%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto Slab', serif;
+    
+}
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.income, .costs {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5em;
+}
+.income {
+    margin-bottom: 10px;
+}
+#income, #costs {
+    height: 30px;
+    font-size: 1.2em;
+    font-family: 'Jost', sans-serif;
+    width: 125px;
+    border-radius: 5px;
+    border: none;
+}
+.costs {
+    margin-bottom: 25px;
+}
+
+#addIncome {
+    text-decoration: none;
+    color: rgba(24, 17, 1, 0.863);
+    font-size: 1.2em;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    border-radius: 10px;
+    border: 1px solid rgba(24, 17, 1, 0.863);
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 5px 1px black;
+}
+#addIncome:hover {
+    background: rgb(34,74,195);
+    background: linear-gradient(0deg, rgba(34,74,195,1) 0%, rgba(132,253,45,1) 100%);
+}
+.score {
+    background-color: #fff;
+    padding: 15px 15px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-family: 'Jost', sans-serif;
+    box-shadow: 1px 1px 10px 5px white;
+    display: none;
+}
