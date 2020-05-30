@@ -37,7 +37,7 @@ body {
     color: black;
     font-family: 'Jost', sans-serif;
     display: block;
-    padding: 13.5px 30px;
+    padding: 15.5px 30px;
     transition: .2s ease-in;
     -webkit-transition: .2s ease-in;
 }

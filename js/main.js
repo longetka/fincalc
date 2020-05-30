@@ -1,13 +1,13 @@
 $('.credit-container').hide();
 $('#main').on('click', function () {
-    $(this).preventDefault();
+    $(this).preventDefault;
     $('.credit-container').hide();
     $('.container').fadeIn();
     $('.score').html('').hide();
     $('#income, #costs').val('');
 });
 $('#credit').on('click', function () {
-    $(this).preventDefault();
+    $(this).preventDefault;
     $('.container').hide();
     $('.credit-container').fadeIn();
     $('.credit-score').html('').hide();
