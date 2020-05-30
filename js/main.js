@@ -1,6 +1,4 @@
 function addIncome() {
-    // document.getElementById('addIncome').preventDefault;
-    
     document.getElementsByClassName('score')[0].innerHTML = '';
     var income = document.getElementById('income').value;
     var costs = document.getElementById('costs').value;

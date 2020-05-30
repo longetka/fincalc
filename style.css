@@ -7,9 +7,10 @@
     box-sizing: border-box;
 }
 body {
-    background: linear-gradient(90deg, rgba(39,190,218,1) 0%, rgba(90,86,189,1) 50%, rgba(43,80,209,1) 100%);
+    background: rgb(20,149,207);
+    background: radial-gradient(circle, rgba(20,149,207,1) 0%, rgba(147,199,219,1) 50%, rgba(201,228,237,1) 100%);
 }
-.container {
+.container, .credit-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +20,31 @@ body {
     font-family: 'Roboto Slab', serif;
     
 }
+/* Navigation */
+.nav-bar {
+    width: 100%;
+    background-color: #a71d48;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-bar__link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Jost', sans-serif;
+    display: block;
+    padding: 13.5px 30px;
+    transition: .2s ease-in;
+    -webkit-transition: .2s ease-in;
+}
+.nav-bar__link:hover {
+    background-color: #A8D2E2;
+}
+
+
 .title {
     text-align: center;
     margin-bottom: 50px;
@@ -34,7 +60,7 @@ body {
     height: 30px;
     font-size: 1em;
     font-family: 'Jost', sans-serif;
-    width: 125px;
+    width: 7.8em;
     border-radius: 5px;
     border: none;
 }
@@ -42,15 +68,15 @@ body {
     margin-bottom: 25px;
 }
 
-#addIncome {
+#addIncome, .credit-btn {
     text-decoration: none;
     color: rgba(24, 17, 1, 0.863);
     font-size: 1.2em;
     font-family: 'Jost', sans-serif;
     text-transform: uppercase;
     padding: 10px 20px;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: rgb(249,189,24);
+    background: linear-gradient(0deg, rgba(249,189,24,1) 0%, rgba(250,221,149,1) 50%, rgba(253,238,203,1) 100%);
     border-radius: 10px;
     border: 1px solid rgba(24, 17, 1, 0.863);
     margin-bottom: 50px;
@@ -60,7 +86,7 @@ body {
     background: rgb(34,74,195);
     background: linear-gradient(0deg, rgba(34,74,195,1) 0%, rgba(132,253,45,1) 100%);
 }
-.score {
+.score, .credit-score {
     background-color: #fff;
     padding: 15px 15px;
     border-radius: 10px;
@@ -68,4 +94,62 @@ body {
     font-family: 'Jost', sans-serif;
     box-shadow: 1px 1px 10px 5px white;
     display: none;
+}
+
+
+/* Credit */
+
+.credit-title {
+    margin-bottom: 30px;
+}
+.credit-sum, .credit-length, .credit-rate {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+#creditSum, #creditLength, #creditRate {
+    width: 6em;
+    font-size: 1.2em;
+
+    padding-left: 5px;
+    
+    border: none;
+    border-radius: 5px;
+    font-family: 'Jost', sans-serif;
+}
+.credit-length {
+    justify-content: center;
+}
+.credit-length label {
+    padding-right: 1em;
+}
+#creditLength {
+    width: 2em;
+    border-radius: 5px 0px 0px 5px;
+}
+#lengthOption {
+    font-size: 1em;
+    
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    font-family: 'Jost', sans-serif;
+}
+.credit-btn {
+    margin-top: 25px;
+}
+.credit-btn:hover {
+    background: rgb(239,51,36);
+    background: linear-gradient(0deg, rgba(239,51,36,1) 0%, rgba(246,170,134,1) 50%, rgba(252,225,199,1) 100%);
+}
+.credit-note {
+    padding-top: 30px;
+    font-size: .75em;
+
+}
+@media (max-width: 445px) {
+    body {
+        font-size: 13px;
+    }
 }
