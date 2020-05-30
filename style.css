@@ -18,8 +18,9 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: 'Roboto Slab', serif;
-    
 }
+
+
 /* Navigation */
 .nav-bar {
     width: 100%;
@@ -146,10 +147,24 @@ body {
 .credit-note {
     padding-top: 30px;
     font-size: .75em;
-
 }
 @media (max-width: 445px) {
     body {
         font-size: 13px;
+    }
+}
+@media (min-width: 446px) {
+    .credit-sum, .credit-length, .credit-rate {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+    }
+    .credit-sum label, .credit-rate label {
+        padding-right: 1.7em;
+    }
+    .nav-bar {
+        justify-content: center;
     }
 }

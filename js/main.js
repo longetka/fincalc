@@ -1,3 +1,18 @@
+$('.credit-container').hide();
+$('#main').on('click', function () {
+    $('.credit-container').hide();
+    $('.container').fadeIn();
+    $('.score').html('').hide();
+    $('#income, #costs').val('');
+});
+$('#credit').on('click', function () {
+    $('.container').hide();
+    $('.credit-container').fadeIn();
+    $('.credit-score').html('').hide();
+    $('#creditSum, #creditLength, #creditRate').val('');
+});
+
+
 function addIncome() {
     document.getElementsByClassName('score')[0].innerHTML = '';
     var income = document.getElementById('income').value;
